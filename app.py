@@ -12,12 +12,12 @@ st.title("XGBoost Model Deployment")
 
 # Collect user input
 def user_input_features():
-    feature1 = st.sidebar.number_input("Feature 1")
-    feature2 = st.sidebar.number_input("Feature 2")
+    claims paid = st.sidebar.number_input("Claims_paid")
+    claims declined = st.sidebar.number_input("Claims_declined")
     # Add more features as needed
     data = {
-        'feature1': feature1,
-        'feature2': feature2,
+        'Claims_paid': claims paid,
+        'Claims_declined': Claims declined,
         # Add more features as needed
     }
     features = pd.DataFrame(data, index=[0])
